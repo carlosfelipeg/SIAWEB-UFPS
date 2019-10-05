@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../iconos/style.css">
+	<title>Iniciar Sesión | Siaweb</title>
+</head>
+
+<body>
+
+<header>
+	<nav>
+		<a href="index.html"><img class="logo" src="../imagen/logo.png"></a>
+		<span class="menu-burger"></span>
+	</nav>
+</header>
+
+<section>
+	<article id="caja" class="art-uno">
+		<div class="contenedorUno">
+			<h1 class="title-siaweb">Iniciar Sesión Siaweb</h1>
+			<input type="text" class="" placeholder="Correo o usuario" name="">
+			<input type="password" class="" placeholder="Contraseña" name="">
+			<div class="contenedor-btn">
+				<button class="btn-ingresar">INGRESAR</button>
+				<a class="link-contrasena" href="">Olvidaste tu contraseña?</a>
+			</div>
+		</div>
+		<div class="line-purple"></div>
+		<div class="contenedorDos">
+			<div class="contenedor-btn-socialmedia">
+				<img class="size-fav" src="../imagen/favicon.png">
+				<button class="btn-facebook"><span class="icon-facebook"></span>Facebook</button>
+				<button class="btn-twitter"><span class="icon-twitter"></span>Twitter</button>
+			</div>
+			<p class="info-reg">No tienes cuenta?
+				<input type="submit" class="btn-reg-js" value="Registrate ahora" onclick="Mostrar_ocultar()
+">
+			</p>
+
+		</div>
+	</article>
+
+	<article id="caja2" class="art-dos">
+		<div class="contenedorUno">
+			<h1 class="title-siaweb">Ingresa la siguiente información</h1>
+			<input type="" placeholder="Nombre y apellidos" name="">
+			<input type="" placeholder="Correo electronico" name="">
+			<input type="" placeholder="Telefono" name="">
+			<input type="" placeholder="Nombre de usuario" name="">
+			<button class="btn-crear-cuenta">CREAR CUENTA</button>
+		</div>
+		<div class="line-purple"></div>
+		<input type="submit" class="btn-reg-js" value="Ya tienes cuenta?" onclick="Mostrar_ocultar()
+">
+	</article>
+</section>
+<div class="agua">
+	<div class="water ann"></div>
+	<div class="water annD"></div>
+	<div class="water annT"></div>
+	<div class="water annC"></div>
+</div>
+<script type="text/javascript">
+	function Mostrar()
+	{
+		document.getElementById("caja").style.display = "block";
+		document.getElementById("caja2").style.display = "none";
+	}
+
+	function Ocultar()
+	{
+		document.getElementById("caja").style.display = "none";
+		document.getElementById("caja2").style.display = "block";
+	}
+
+	function Mostrar_ocultar()
+	{
+		var caja = document.getElementById("caja");
+		
+		if (caja.style.display == "block") {
+			Ocultar();
+		} else {
+			Mostrar();
+		}
+	}
+</script>
+
+</body>
+</html>

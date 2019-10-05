@@ -1,0 +1,71 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+.centrar 
+{
+	margin: 0 0 2em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.uno
+{
+	background-color: #CCCCFF;
+	padding: 4em 0;
+}
+
+.dos
+{
+	/* 
+		Linear-gradient:
+		Crea una imágen la cual representa un degradado lineal de colores
+	*/
+	background: linear-gradient(0deg, #ca1bfc, #5562fc, #4eeaf9);
+	
+	height: 150px;
+	color: white;
+	font-weight: bold;
+}
+
+.tres
+{
+	border-radius: 30px;
+	background-color: #FFCC33;
+	height: 150px;
+	/* Alinear a la derecha */
+	justify-self: end;
+	width: 30%;
+}
+
+/*-------- Aprendiendo Flexbox ---------*/
+
+.flex-contenedor
+{
+	/* Convierte a sus hijos en cajas flexibles */
+	display: flex;
+	/* Cambiar direccion del eje principal del flex*/
+	flex-direction: column;
+	flex-direction: column-reverse;
+	height: 150px;
+	background-color: #FF9933;
+}
+
+.flex-item
+{
+	color: white;
+	background-color: #CC0000
+}
+
+/* Impares */
+.flex-item:nth-child(odd)
+{
+	background-color: #CC66CC
+}
+
+
+
