@@ -17,7 +17,6 @@ body {
 
 body::-webkit-scrollbar 
 {
-	
 	width: 10px;
 	background: linear-gradient(0deg, #ca1bfc, #5562fc, #4eeaf9);
 }
@@ -169,6 +168,7 @@ textarea::-webkit-scrollbar-thumb
 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+
 	grid-gap: 1em;
 	padding: 0 0 2em 0;
 }
@@ -260,6 +260,24 @@ textarea::-webkit-scrollbar-thumb
 {
 	background: linear-gradient(360deg, #ed1c24, transparent,  transparent, transparent);
 	
+}
+
+.lob-padre
+{
+	position: relative;
+}
+
+.lobo-scrol
+{
+	position: absolute;
+	top: -48vh;
+	right: 0;
+	width: 300px;
+}
+
+.img-lobo-scrol
+{
+	width: 100%;
 }
 
 .deg-imagen
@@ -674,7 +692,6 @@ textarea::-webkit-scrollbar-thumb
 
 .vertical-SIAWE
 {
-	color: white;
 	font-size: 35vw;
 	line-height: 33vw;
 	font-weight: bold;
@@ -684,7 +701,7 @@ textarea::-webkit-scrollbar-thumb
 	/*transform: rotate(180deg);*/
 
 	/* Eliminar espacio entre lineas: tamaño pt ??
-	letter-spacing: -2.3vw; */ 
+	letter-spacing: -2.3vw; */
 	background-image: url('../imagen/galeria/8.jpg');
 	/* background: -webkit-linear-gradient(#5562FC, #CA1BFC); */
 	background-size: cover;
@@ -703,9 +720,6 @@ textarea::-webkit-scrollbar-thumb
   	rapido al principio
   	lento al final */
   	animation: DDD 15s ease-in-out infinite;
-
-	animation-name: DDD;
-	animation-duration: 15s;
 
     /*transform: rotate(180deg);*/
     /*
@@ -906,8 +920,8 @@ textarea::-webkit-scrollbar-thumb
 
 .icon:hover
 {
-	transform: translateY(-40%) scale(1.2);
-	/* animation: iconAni .7s ease-in-out; */
+	/* transform: translateY(-40%) scale(1.2);*/
+	animation: iconAni .7s ease-in-out;
 }
 
 @keyframes iconAni
