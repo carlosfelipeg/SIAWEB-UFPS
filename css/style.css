@@ -56,9 +56,6 @@ textarea::-webkit-scrollbar-thumb
 
 /*_______________ PROJECTS _______________*/
 
-.parallax1{
-	position: absolute;
-}
 .container-header 
 {
 	background-image: url('../imagen/slider/slider-project.jpg');
