@@ -56,6 +56,9 @@ textarea::-webkit-scrollbar-thumb
 
 /*_______________ PROJECTS _______________*/
 
+.parallax1{
+	position: absolute;
+}
 .container-header 
 {
 	background-image: url('../imagen/slider/slider-project.jpg');
@@ -65,8 +68,9 @@ textarea::-webkit-scrollbar-thumb
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	position: relative;
 	width: 100%;
+
+
 }
 
 .deg
@@ -89,6 +93,8 @@ textarea::-webkit-scrollbar-thumb
 	position: relative;
 	width: 90%;
 	z-index: 1;
+
+	
 }
 
 .sub-container-nav
@@ -100,9 +106,10 @@ textarea::-webkit-scrollbar-thumb
 
 .slider
 {
-	padding: 4em 0
-}
+	padding: 4em 0;
+	position: sticky;
 
+}
 .slider h3
 {
 	color: #FFF;
@@ -967,7 +974,9 @@ textarea::-webkit-scrollbar-thumb
 
 
 /* ___________________ INDEX _______________________ */
-
+.top{
+	margin-top: 500px;
+}
 
 .container-header-index 
 {
@@ -978,8 +987,14 @@ textarea::-webkit-scrollbar-thumb
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	position: relative;
 	width: 100%;
+
+	/* parallax */
+	position: fixed;
+	background-attachment: fixed;
+	top:0;
+
+
 }
 
 .deg2
@@ -998,8 +1013,12 @@ textarea::-webkit-scrollbar-thumb
 	background-color: white; 
 	border-radius: 50px 50px 0 0;
 	position: relative;
-	top: -60px;
-	width: 100%
+	margin-top: 100px;
+	width: 100%;
+
+	/*parallax*/
+	margin-top: 400px;
+
 }
 
 .art-quienes-somos
